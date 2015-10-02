@@ -1,12 +1,20 @@
 {
-  "name": "Emplist Web",
-  "description": "TODO: Add a short description about Emplist Web",
+  "name": "magic server",
+  "description": "TODO: Add a short description ",
   "keywords": [
     "small",
     "sharp",
     "tool"
   ],
-  "repository": "https://git.soma.salesforce.com/asif-khan/odata2",
-  "addons": [],
-  "env": {}
+  "repository": "https://github.com/chrisx01/ch-odata-server",
+  "addons": [ "openredis",
+    "mongolab:shared-single-small"],
+  "env": { "SECRET_TOKEN": {
+      "description": "A secret key for verifying the integrity of signed cookies.",
+      "generator": "secret"
+    },
+    "MY_PARAM ": {
+      "description": "magic parameter",
+      "value": "007"
+    }}
 }
